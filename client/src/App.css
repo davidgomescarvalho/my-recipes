@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -54,12 +53,13 @@ input {
   margin: 0;
   width: 100%;
   height: 80px;
-  background-color: black;
+  background-color: #6b2737;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -67,7 +67,16 @@ a {
   text-decoration: none;
   margin: 10px;
   font-size: 25px;
+  padding: 4px;
 }
+
+.navbar a:hover {
+  color: #E08E45; /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Optional: Add a background color on hover */
+  border-radius: 5px; /* Optional: Rounded corners for the hover background */
+  padding: 4px;
+}
+
 
 .create-recipe {
   display: flex;
@@ -81,10 +90,47 @@ a {
   margin: 20px;
   width: 400px;
 }
+
 .create-recipe form {
   display: flex;
   flex-direction: column;
 }
+
+.create-recipe label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 5px;
+}
+
+.create-recipe input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#create-button {
+  background-color: #F8F4A6;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-button {
+  background-color: #E08E45;
+  border: 1px solid black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+
+
 ul {
   list-style: none;
   padding: 0;
@@ -96,13 +142,25 @@ ul {
 }
 
 li {
-  border: 1px solid black;
+  border: 1px solid #E08E45;
+  border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   margin-top: 0;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-left: 20px;
+  background-color: #E08E45;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -120,4 +178,35 @@ img {
 p {
   max-width: 400px;
   font-size: 12px;
+}
+
+#save-button{
+  background-color: #E08E45;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#save-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#log-button {
+  background-color: #F8F4A6;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#log-button:hover {
+  background-color: #96928d;
+  color: white;
 }

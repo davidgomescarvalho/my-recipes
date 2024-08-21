@@ -63,6 +63,7 @@ export const Home = () => {
               <button
                 onClick={() => saveRecipe(recipe._id)}
                 disabled={isRecipeSaved(recipe._id)}
+                id="save-button"
               >
                 {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
               </button>
