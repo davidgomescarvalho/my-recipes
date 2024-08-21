@@ -17,4 +17,4 @@ mongoose.connect(
   "mongodb+srv://davdev:HmcypieUT6lUF8UZ@recipes.wb7ip.mongodb.net/recipes?retryWrites=true&w=majority&appName=recipes"
 );
 
-app.listen(3001, () => console.log("Server is running..."));
+app.listen(process.env.PORT || 3001, () => console.log("Server is running..."));
